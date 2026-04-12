@@ -1242,7 +1242,101 @@
         <blockquote class="its-quote">
           <p>יצאתי עם שלושה לקוחות חדשים ועם שיטת עבודה שינתה לי את כל תהליך הבנייה. לא ציפיתי שכנס אחד ייתן לי כל כך הרבה ערך מעשי — מה שלמדתי כאן יישמתי כבר בשבוע שאחרי.</p>
         </blockquote>
-        <footer class="its-card-footer">
+        
+
+<section class="contact-section" id="contact" aria-labelledby="contact-heading">
+  <div class="contact-bg-glow contact-bg-glow--cyan"></div>
+  <div class="contact-bg-glow contact-bg-glow--purple"></div>
+
+  <div class="contact-container">
+    <div class="contact-header">
+      <h2 class="contact-title" id="contact-heading">צרו קשר</h2>
+      <p class="contact-subtitle">יש לכם שאלות? רוצים לשמוע עוד על הפלטפורמה שלנו? אנחנו כאן בשבילכם — נשמח לענות על כל שאלה ולעזור לכם להתחיל.</p>
+    </div>
+
+    <form class="contact-form" id="contactForm" novalidate aria-label="טופס צור קשר">
+      <div class="contact-form-row">
+        <div class="contact-field">
+          <label class="contact-label" for="contact-name">שם מלא <span class="contact-required" aria-hidden="true">*</span></label>
+          <input
+            class="contact-input"
+            type="text"
+            id="contact-name"
+            name="fullName"
+            placeholder="הכניסו את שמכם המלא"
+            autocomplete="name"
+            required
+            aria-required="true"
+          />
+          <span class="contact-error" id="contact-name-error" role="alert" aria-live="polite"></span>
+        </div>
+
+        <div class="contact-field">
+          <label class="contact-label" for="contact-email">כתובת אימייל <span class="contact-required" aria-hidden="true">*</span></label>
+          <input
+            class="contact-input"
+            type="email"
+            id="contact-email"
+            name="email"
+            placeholder="example@email.com"
+            autocomplete="email"
+            required
+            aria-required="true"
+            dir="ltr"
+          />
+          <span class="contact-error" id="contact-email-error" role="alert" aria-live="polite"></span>
+        </div>
+      </div>
+
+      <div class="contact-field">
+        <label class="contact-label" for="contact-phone">טלפון</label>
+        <input
+          class="contact-input"
+          type="tel"
+          id="contact-phone"
+          name="phone"
+          placeholder="050-000-0000"
+          autocomplete="tel"
+          dir="ltr"
+        />
+      </div>
+
+      <div class="contact-field">
+        <label class="contact-label" for="contact-message">הודעה <span class="contact-required" aria-hidden="true">*</span></label>
+        <textarea
+          class="contact-input contact-textarea"
+          id="contact-message"
+          name="message"
+          placeholder="ספרו לנו איך נוכל לעזור לכם..."
+          rows="5"
+          required
+          aria-required="true"
+        ></textarea>
+        <span class="contact-error" id="contact-message-error" role="alert" aria-live="polite"></span>
+      </div>
+
+      <div class="contact-submit-wrap">
+        <button class="contact-submit-btn" type="submit" aria-label="שלח הודעה">
+          <span class="contact-submit-text">שלחו הודעה</span>
+          <svg class="contact-submit-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="22" y1="2" x2="11" y2="13"></line>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+          </svg>
+        </button>
+      </div>
+
+      <div class="contact-success" id="contactSuccess" role="status" aria-live="polite" aria-hidden="true">
+        <svg class="contact-success-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+          <polyline points="22 4 12 14.01 9 11.01"></polyline>
+        </svg>
+        <p>תודה! הודעתכם נשלחה בהצלחה. נחזור אליכם בהקדם.</p>
+      </div>
+    </form>
+  </div>
+</section>
+
+<footer class="its-card-footer">
           <div class="its-avatar">
             <span class="its-avatar-initials">ד״ר</span>
           </div>
