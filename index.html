@@ -795,7 +795,7 @@
 </script>
   
   <main>
-    <section id="hero" class="index-hero-section" data-layout-spec="בית-hero" dir="rtl" data-hero-type="fullscreen-scrim" style="animation: zappy-fade_in 0.8s 0s ease forwards;">
+    <section id="hero" class="index-hero-section" data-layout-spec="בית-hero" dir="rtl" data-hero-type="fullscreen-scrim" style="animation: zappy-fade_in 0.8s 0s ease forwards;" data-zappy-animate="fade_in" data-zappy-anim-duration="0.6s" data-zappy-anim-delay="0s">
   <!-- Background Image -->
   <div class="index-hero-bg">
     <img data-hero-bg="true" data-placeholder="index-hero-image-1" data-context="Premium web conference main stage with dramatic cinematic lighting: large curved digital screens displaying code, design systems, and modern web interfaces. Subtle audience silhouettes in darkness, spotlights cutting through atmospheric haze, a sleek dark stage with technical equipment. The mood is sophisticated, high-caliber, and cinematic — like a top-tier tech keynote event. Deep graphite-black tones with electric blue and purple accent lighting. Wide panoramic shot with generous negative space on the right side for text overlay." width="1440" height="900" src="/assets/site-index-hero-image-1.webp" alt="במת כנס פיתוח ווב מקצועי עם תאורה דרמטית ומסכים דיגיטליים">
@@ -864,7 +864,7 @@
 
 </section>
 
-<section class="index-benefits-section" dir="rtl" data-layout-spec="בית-benefits">
+<section class="index-benefits-section" dir="rtl" data-layout-spec="בית-benefits" data-zappy-animate="fade_in" data-zappy-anim-duration="0.6s" data-zappy-anim-delay="0.1s">
   <div class="index-benefits-container">
 
     <!-- Intro Block -->
@@ -974,7 +974,7 @@
 
 </section>
 
-<section id="speakers" class="index-speakers-section" data-layout-spec="בית-speakers" dir="rtl">
+<section id="speakers" class="index-speakers-section" data-layout-spec="בית-speakers" dir="rtl" data-zappy-animate="fade_in" data-zappy-anim-duration="0.6s" data-zappy-anim-delay="0.2s">
   <!-- Ambient glow decorations -->
   <div class="speakers-glow speakers-glow--purple" aria-hidden="true"></div>
   <div class="speakers-glow speakers-glow--cyan" aria-hidden="true"></div>
@@ -1098,7 +1098,7 @@
 
 </section>
 
-<section class="index-schedule-section" dir="rtl" data-layout-spec="בית-schedule">
+<section class="index-schedule-section" dir="rtl" data-layout-spec="בית-schedule" data-zappy-animate="fade_in" data-zappy-anim-duration="0.6s" data-zappy-anim-delay="0.30000000000000004s">
   <div class="index-schedule-container">
 
     <!-- Two-column layout: intro on START (right), agenda on END (left) -->
@@ -1230,7 +1230,7 @@
 
 </section>
 
-<section class="index-testimonials-section" data-layout-spec="בית-testimonials" dir="rtl">
+<section class="index-testimonials-section" data-layout-spec="בית-testimonials" dir="rtl" data-zappy-animate="fade_in" data-zappy-anim-duration="0.6s" data-zappy-anim-delay="0.4s">
   <!-- Ambient glow decorations -->
   <div class="its-glow its-glow-purple" aria-hidden="true"></div>
   <div class="its-glow its-glow-cyan" aria-hidden="true"></div>
@@ -1343,7 +1343,7 @@
 
 </section>
 
-<section id="stats" class="index-stats-section" data-layout-spec="בית-stats" dir="rtl">
+<section id="stats" class="index-stats-section" data-layout-spec="בית-stats" dir="rtl" data-zappy-animate="fade_in" data-zappy-anim-duration="0.6s" data-zappy-anim-delay="0.5s">
   <div class="index-stats-container">
 
     <!-- Intro Block -->
@@ -1407,7 +1407,7 @@
 
 </section>
 
-<section id="cta" class="index-cta-section" data-layout-spec="בית-cta" dir="rtl">
+<section id="cta" class="index-cta-section" data-layout-spec="בית-cta" dir="rtl" data-zappy-animate="fade_in" data-zappy-anim-duration="0.6s" data-zappy-anim-delay="0.6000000000000001s">
   <div class="index-cta-ambient"></div>
   <div class="index-cta-container">
     <div class="index-cta-inner">
@@ -1533,6 +1533,28 @@
   
   <div data-integration="accessibility:toolbar"></div>
 
+<script data-zappy-animation-observer="">
+(function() {
+  if (window.__zappyAnimObserver) return;
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        var el = entry.target;
+        var anim = el.getAttribute('data-zappy-animate');
+        var dur = el.getAttribute('data-zappy-anim-duration') || '0.6s';
+        var del = el.getAttribute('data-zappy-anim-delay') || '0s';
+        el.style.animation = 'zappy-' + anim + ' ' + dur + ' ' + del + ' ease forwards';
+        el.classList.add('zappy-animated');
+        observer.unobserve(el);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+  document.querySelectorAll('[data-zappy-animate]').forEach(function(el) {
+    observer.observe(el);
+  });
+  window.__zappyAnimObserver = observer;
+})();
+</script>
     <script src="/script.js"></script>
 
     <script id="zappy-mobile-submenu-script">
