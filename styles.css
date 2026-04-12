@@ -5776,6 +5776,25 @@ body.accessibility-widget-visible ._access-menu {
   }
 }
 
+.index-stats-section .neon-stats-grid {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 16px !important;
+  margin-bottom: 48px !important;
+}
+
+@media (max-width: 1024px) {
+.index-stats-section .neon-stats-grid {
+  grid-template-columns: repeat(2, 1fr) !important;
+}
+}
+
+@media (max-width: 640px) {
+.index-stats-section .neon-stats-grid {
+  grid-template-columns: 1fr !important;
+}
+}
+
 /* ========== RTL MOBILE NAVBAR FIX (zappy-rtl-mobile-fix) ========== */
 /* High-specificity rules to ensure RTL positioning wins over any [lang="en"] conflicts */
 /* For RTL sites: hamburger on RIGHT, phone on LEFT (mirror of LTR layout) */

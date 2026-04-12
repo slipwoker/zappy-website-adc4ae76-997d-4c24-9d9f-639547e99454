@@ -1331,52 +1331,46 @@
 
 </section>
 
-<section id="stats" class="index-stats-section" data-layout-spec="בית-stats" dir="rtl">
-  <div class="index-stats-container">
+<section id="stats" class="index-stats-section" data-layout-spec="בית-stats" dir="rtl" style="position:relative; min-height:600px; padding:80px 24px; overflow:hidden; background:#111318; direction:rtl;">
+  <!-- Neon grid background -->
+  <div aria-hidden="true" style="position:absolute; inset:0; opacity:0.10; background-image: linear-gradient(rgba(0,212,255,0.15) 1px, transparent 1px), linear-gradient(90deg, rgba(0,212,255,0.15) 1px, transparent 1px); background-size: 40px 40px;"></div>
 
+  <div style="position:relative; max-width:1200px; margin:0 auto;">
     <!-- Intro Block -->
-    <div class="index-stats-intro">
-      <span class="index-stats-eyebrow">מספרים שמדברים בעד עצמם</span>
-      <h2 class="index-stats-heading">כנס בוני אתרים 2025 — <span class="index-stats-heading-accent">מוקפד, ממוקד, מקצועי</span></h2>
-      <p class="index-stats-subtext">SiteAI אינו עוד כנס גנרי. כל פרט תוכנן כדי ליצור ערך אמיתי — מהרמקולים שנבחרו בקפידה, דרך הסשנים הממוקדים, ועד לקהל המקצועי שנסגר במספר מוגבל של מקומות.</p>
+    <div style="text-align:center; margin-bottom:64px;">
+      <div style="display:inline-block; padding:4px 16px; border-radius:999px; font-size:0.75rem; font-weight:700; margin-bottom:16px; letter-spacing:0.12em; background:rgba(0,212,255,0.1); color:#00D4FF; border:1px solid rgba(0,212,255,0.3);">כנס בוני אתרים 2025</div>
+      <h2 style="font-size:2.8rem; font-weight:900; margin:0 0 20px; line-height:1.2; color:#ffffff;">מוקפד. ממוקד. <span style="color:#00D4FF;">מקצועי.</span></h2>
+      <p style="font-size:1rem; max-width:640px; margin:0 auto; line-height:1.7; color:rgba(255,255,255,0.65);">SiteAI אינו עוד כנס גנרי. כל פרט תוכנן כדי ליצור ערך אמיתי — מהרמקולים שנבחרו בקפידה, דרך הסשנים הממוקדים, ועד לקהל המקצועי שנסגר במספר מוגבל של מקומות.</p>
     </div>
 
     <!-- Stats Grid -->
-    <div class="index-stats-grid">
-
-      <article class="index-stats-card">
-        <div class="index-stats-card-top-accent"></div>
-        <div class="index-stats-number"><span class="index-stats-numeral">18</span><span class="index-stats-unit">+</span></div>
-        <h3 class="index-stats-card-title">רמקולים מובילים</h3>
-        <p class="index-stats-card-desc">מומחים מהשורה הראשונה בפיתוח ווב, עיצוב UX/UI ואסטרטגיה דיגיטלית — נבחרו ידנית לפי רלוונטיות ועומק תוכן.</p>
-      </article>
-
-      <article class="index-stats-card">
-        <div class="index-stats-card-top-accent"></div>
-        <div class="index-stats-number"><span class="index-stats-numeral">24</span><span class="index-stats-unit"></span></div>
-        <h3 class="index-stats-card-title">סשנים ממוקדים</h3>
-        <p class="index-stats-card-desc">הרצאות, סדנאות ופאנלים שנבנו לעומק — ללא תוכן שיווקי, ללא פדינג. רק ידע שאפשר ליישם ביום שאחרי.</p>
-      </article>
-
-      <article class="index-stats-card">
-        <div class="index-stats-card-top-accent"></div>
-        <div class="index-stats-number"><span class="index-stats-numeral">300</span><span class="index-stats-unit"></span></div>
-        <h3 class="index-stats-card-title">מקומות בלבד</h3>
-        <p class="index-stats-card-desc">פורמט סגור ומוגבל מאפשר שיחות אמיתיות, נטוורקינג איכותי וחוויה שלא אפשרית באירועים מסיביים.</p>
-      </article>
-
-      <article class="index-stats-card">
-        <div class="index-stats-card-top-accent"></div>
-        <div class="index-stats-number"><span class="index-stats-numeral">3</span><span class="index-stats-unit">קהלים</span></div>
-        <h3 class="index-stats-card-title">קהל מגוון ומקצועי</h3>
-        <p class="index-stats-card-desc">בוני אתרים, מפתחי ווב ומעצבי UX/UI — שלושה עולמות שנפגשים תחת קורת גג אחת ליצירת שיתופי פעולה אמיתיים.</p>
-      </article>
-
+    <div style="--zappy-grid-cols: repeat(4,1fr); display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin-bottom:48px;" data-zappy-explicit-columns="true">
+      <div style="border-radius:16px; padding:32px 24px; text-align:center; background:rgba(0,212,255,0.05); border:1px solid rgba(0,212,255,0.25); transition:transform 0.3s;">
+        <div style="font-size:2.8rem; font-weight:900; margin-bottom:4px; color:#00D4FF;">18+</div>
+        <div style="font-size:0.9rem; font-weight:600; color:rgba(255,255,255,0.7);">רמקולים מובילים</div>
+        <p style="font-size:0.85rem; margin:12px 0 0; line-height:1.6; color:rgba(255,255,255,0.45);">מומחים מהשורה הראשונה בפיתוח ווב, עיצוב UX/UI ואסטרטגיה דיגיטלית</p>
+      </div>
+      <div style="border-radius:16px; padding:32px 24px; text-align:center; background:rgba(124,58,237,0.05); border:1px solid rgba(124,58,237,0.25); transition:transform 0.3s;">
+        <div style="font-size:2.8rem; font-weight:900; margin-bottom:4px; color:#7C3AED;">24</div>
+        <div style="font-size:0.9rem; font-weight:600; color:rgba(255,255,255,0.7);">סשנים ממוקדים</div>
+        <p style="font-size:0.85rem; margin:12px 0 0; line-height:1.6; color:rgba(255,255,255,0.45);">הרצאות, סדנאות ופאנלים שנבנו לעומק — ללא תוכן שיווקי, ללא פדינג</p>
+      </div>
+      <div style="border-radius:16px; padding:32px 24px; text-align:center; background:rgba(184,255,59,0.05); border:1px solid rgba(184,255,59,0.25); transition:transform 0.3s;">
+        <div style="font-size:2.8rem; font-weight:900; margin-bottom:4px; color:#B8FF3B;">300</div>
+        <div style="font-size:0.9rem; font-weight:600; color:rgba(255,255,255,0.7);">מקומות בלבד</div>
+        <p style="font-size:0.85rem; margin:12px 0 0; line-height:1.6; color:rgba(255,255,255,0.45);">פורמט סגור ומוגבל מאפשר שיחות אמיתיות ונטוורקינג איכותי</p>
+      </div>
+      <div style="border-radius:16px; padding:32px 24px; text-align:center; background:rgba(0,212,255,0.05); border:1px solid rgba(0,212,255,0.25); transition:transform 0.3s;">
+        <div style="font-size:2.8rem; font-weight:900; margin-bottom:4px; color:#00D4FF;">3</div>
+        <div style="font-size:0.9rem; font-weight:600; color:rgba(255,255,255,0.7);">קהל מגוון ומקצועי</div>
+        <p style="font-size:0.85rem; margin:12px 0 0; line-height:1.6; color:rgba(255,255,255,0.45);">בוני אתרים, מפתחי ווב ומעצבי UX/UI תחת קורת גג אחת</p>
+      </div>
     </div>
 
     <!-- Supporting Line -->
-    <p class="index-stats-footnote">כנס שנבנה על עקרון אחד פשוט: <strong>איכות מנצחת כמות.</strong> שיחות ממוקדות, קשרים אמיתיים, ותוכן שמשנה את הדרך שבה אתם בונים.</p>
-
+    <div style="border-radius:16px; padding:28px 40px; background:rgba(124,58,237,0.08); border:1px solid rgba(124,58,237,0.2);">
+      <p style="font-size:1rem; line-height:1.7; text-align:center; margin:0; color:rgba(255,255,255,0.75);">כנס שנבנה על עקרון אחד פשוט: <strong style="color:#B8FF3B;">איכות מנצחת כמות.</strong> שיחות ממוקדות, קשרים אמיתיים, ותוכן שמשנה את הדרך שבה אתם בונים.</p>
+    </div>
   </div>
 
   <!-- Bottom Dot-Matrix Divider -->
@@ -1392,7 +1386,6 @@
       <rect width="1200" height="80" fill="url(#stats-fade-grad)"></rect>
     </svg>
   </div>
-
 </section>
 
 <section id="cta" class="index-cta-section" data-layout-spec="בית-cta" dir="rtl">
