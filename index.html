@@ -1244,95 +1244,156 @@
         </blockquote>
         
 
-<section class="contact-section" id="contact" aria-labelledby="contact-heading">
-  <div class="contact-bg-glow contact-bg-glow--cyan"></div>
-  <div class="contact-bg-glow contact-bg-glow--purple"></div>
+<section class="contact-section" dir="rtl" aria-labelledby="contact-heading">
+  <!-- Cyberpunk grid background overlay -->
+  <div class="contact-bg-grid" aria-hidden="true"></div>
+  <!-- Glowing orbs -->
+  <div class="contact-orb contact-orb--1" aria-hidden="true"></div>
+  <div class="contact-orb contact-orb--2" aria-hidden="true"></div>
 
   <div class="contact-container">
+    <!-- Header -->
     <div class="contact-header">
-      <h2 class="contact-title" id="contact-heading">צרו קשר</h2>
-      <p class="contact-subtitle">יש לכם שאלות? רוצים לשמוע עוד על הפלטפורמה שלנו? אנחנו כאן בשבילכם — נשמח לענות על כל שאלה ולעזור לכם להתחיל.</p>
+      <div class="contact-badge" aria-hidden="true">
+        <span class="contact-badge__dot"></span>
+        <span>תמיכה 24/7</span>
+      </div>
+      <h2 class="contact-title" id="contact-heading">צרו איתנו קשר</h2>
+      <p class="contact-subtitle">יש לכם שאלות? אנחנו כאן לעזור</p>
     </div>
 
-    <form class="contact-form" id="contactForm" novalidate aria-label="טופס צור קשר">
-      <div class="contact-form-row">
-        <div class="contact-field">
-          <label class="contact-label" for="contact-name">שם מלא <span class="contact-required" aria-hidden="true">*</span></label>
-          <input
-            class="contact-input"
-            type="text"
-            id="contact-name"
-            name="fullName"
-            placeholder="הכניסו את שמכם המלא"
-            autocomplete="name"
-            required
-            aria-required="true"
-          />
-          <span class="contact-error" id="contact-name-error" role="alert" aria-live="polite"></span>
+    <!-- Form Card -->
+    <div class="contact-card">
+      <!-- Decorative top border -->
+      <div class="contact-card__top-line" aria-hidden="true"></div>
+
+      <form class="contact-form" id="contactForm" novalidate aria-label="טופס יצירת קשר">
+        <!-- Row: Name + Email -->
+        <div class="contact-form__row">
+          <div class="contact-form__group">
+            <label class="contact-form__label" for="contact-name">
+              <span class="contact-form__label-icon" aria-hidden="true">👤</span>
+              שם מלא
+              <span class="contact-form__required" aria-hidden="true">*</span>
+            </label>
+            <div class="contact-form__input-wrap">
+              <input
+                type="text"
+                id="contact-name"
+                name="fullName"
+                class="contact-form__input"
+                placeholder="הכניסו את שמכם המלא"
+                required
+                autocomplete="name"
+                aria-required="true"
+              />
+              <span class="contact-form__input-glow" aria-hidden="true"></span>
+            </div>
+          </div>
+
+          <div class="contact-form__group">
+            <label class="contact-form__label" for="contact-email">
+              <span class="contact-form__label-icon" aria-hidden="true">✉️</span>
+              כתובת אימייל
+              <span class="contact-form__required" aria-hidden="true">*</span>
+            </label>
+            <div class="contact-form__input-wrap">
+              <input
+                type="email"
+                id="contact-email"
+                name="email"
+                class="contact-form__input"
+                placeholder="your@email.com"
+                required
+                autocomplete="email"
+                aria-required="true"
+                dir="ltr"
+              />
+              <span class="contact-form__input-glow" aria-hidden="true"></span>
+            </div>
+          </div>
         </div>
 
-        <div class="contact-field">
-          <label class="contact-label" for="contact-email">כתובת אימייל <span class="contact-required" aria-hidden="true">*</span></label>
-          <input
-            class="contact-input"
-            type="email"
-            id="contact-email"
-            name="email"
-            placeholder="example@email.com"
-            autocomplete="email"
-            required
-            aria-required="true"
-            dir="ltr"
-          />
-          <span class="contact-error" id="contact-email-error" role="alert" aria-live="polite"></span>
+        <!-- Phone -->
+        <div class="contact-form__group">
+          <label class="contact-form__label" for="contact-phone">
+            <span class="contact-form__label-icon" aria-hidden="true">📱</span>
+            מספר טלפון
+          </label>
+          <div class="contact-form__input-wrap">
+            <input
+              type="tel"
+              id="contact-phone"
+              name="phone"
+              class="contact-form__input"
+              placeholder="050-000-0000"
+              autocomplete="tel"
+              dir="ltr"
+            />
+            <span class="contact-form__input-glow" aria-hidden="true"></span>
+          </div>
+        </div>
+
+        <!-- Message -->
+        <div class="contact-form__group">
+          <label class="contact-form__label" for="contact-message">
+            <span class="contact-form__label-icon" aria-hidden="true">💬</span>
+            הודעה
+            <span class="contact-form__required" aria-hidden="true">*</span>
+          </label>
+          <div class="contact-form__input-wrap">
+            <textarea
+              id="contact-message"
+              name="message"
+              class="contact-form__input contact-form__textarea"
+              placeholder="ספרו לנו במה אנחנו יכולים לעזור..."
+              required
+              rows="5"
+              aria-required="true"
+            ></textarea>
+            <span class="contact-form__input-glow" aria-hidden="true"></span>
+          </div>
+        </div>
+
+        <!-- Submit -->
+        <div class="contact-form__submit-wrap">
+          <button type="submit" class="contact-form__submit" aria-label="שלח הודעה">
+            <span class="contact-form__submit-text">שלחו הודעה</span>
+            <span class="contact-form__submit-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M22 2L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <span class="contact-form__submit-shimmer" aria-hidden="true"></span>
+          </button>
+        </div>
+
+        <!-- Success message (hidden by default) -->
+        <div class="contact-form__success" id="contactSuccess" role="alert" aria-live="polite">
+          <span class="contact-form__success-icon" aria-hidden="true">✅</span>
+          <span>ההודעה נשלחה בהצלחה! נחזור אליכם בהקדם.</span>
+        </div>
+      </form>
+
+      <!-- Info strip -->
+      <div class="contact-info-strip">
+        <div class="contact-info-item">
+          <span class="contact-info-item__icon" aria-hidden="true">⚡</span>
+          <span>מענה תוך 24 שעות</span>
+        </div>
+        <div class="contact-info-divider" aria-hidden="true"></div>
+        <div class="contact-info-item">
+          <span class="contact-info-item__icon" aria-hidden="true">🔒</span>
+          <span>המידע שלכם מאובטח</span>
+        </div>
+        <div class="contact-info-divider" aria-hidden="true"></div>
+        <div class="contact-info-item">
+          <span class="contact-info-item__icon" aria-hidden="true">🤖</span>
+          <span>תמיכת AI מתקדמת</span>
         </div>
       </div>
-
-      <div class="contact-field">
-        <label class="contact-label" for="contact-phone">טלפון</label>
-        <input
-          class="contact-input"
-          type="tel"
-          id="contact-phone"
-          name="phone"
-          placeholder="050-000-0000"
-          autocomplete="tel"
-          dir="ltr"
-        />
-      </div>
-
-      <div class="contact-field">
-        <label class="contact-label" for="contact-message">הודעה <span class="contact-required" aria-hidden="true">*</span></label>
-        <textarea
-          class="contact-input contact-textarea"
-          id="contact-message"
-          name="message"
-          placeholder="ספרו לנו איך נוכל לעזור לכם..."
-          rows="5"
-          required
-          aria-required="true"
-        ></textarea>
-        <span class="contact-error" id="contact-message-error" role="alert" aria-live="polite"></span>
-      </div>
-
-      <div class="contact-submit-wrap">
-        <button class="contact-submit-btn" type="submit" aria-label="שלח הודעה">
-          <span class="contact-submit-text">שלחו הודעה</span>
-          <svg class="contact-submit-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <line x1="22" y1="2" x2="11" y2="13"></line>
-            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-          </svg>
-        </button>
-      </div>
-
-      <div class="contact-success" id="contactSuccess" role="status" aria-live="polite" aria-hidden="true">
-        <svg class="contact-success-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-          <polyline points="22 4 12 14.01 9 11.01"></polyline>
-        </svg>
-        <p>תודה! הודעתכם נשלחה בהצלחה. נחזור אליכם בהקדם.</p>
-      </div>
-    </form>
+    </div>
   </div>
 </section>
 
