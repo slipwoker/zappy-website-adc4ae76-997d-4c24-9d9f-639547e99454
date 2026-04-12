@@ -5776,10 +5776,6 @@ body.accessibility-widget-visible ._access-menu {
   }
 }
 
-.index-benefits-section .index-benefits-peek-tile img {
-  filter: grayscale(100%);
-}
-
 /* ========== RTL MOBILE NAVBAR FIX (zappy-rtl-mobile-fix) ========== */
 /* High-specificity rules to ensure RTL positioning wins over any [lang="en"] conflicts */
 /* For RTL sites: hamburger on RIGHT, phone on LEFT (mirror of LTR layout) */
