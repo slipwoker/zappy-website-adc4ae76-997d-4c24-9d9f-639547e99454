@@ -1,6 +1,4 @@
-# SiteAI — Generative Engine Optimization Map
-
-> A professional conference event aimed at website builders and web developers. The event is organized by an individual host and focuses on bringing together professionals in the web development and design industry. The landing page should drive registrations and highlight the event's value proposition.
+# Business — Generative Engine Optimization Map
 
 ---
 
@@ -28,15 +26,7 @@ Information about WCAG compliance and accessibility features.
 
 # Business Context (for LLM understanding)
 
-## About SiteAI
-A professional conference event aimed at website builders and web developers. The event is organized by an individual host and focuses on bringing together professionals in the web development and design industry. The landing page should drive registrations and highlight the event's value proposition.
-
-## Target Audience
-בוני אתרים, מפתחי ווב, מעצבי UX/UI
-
-## Industry
-טכנולוגיה / פיתוח ועיצוב אתרים
-
+## About Business
 ---
 
 # Additional Resources

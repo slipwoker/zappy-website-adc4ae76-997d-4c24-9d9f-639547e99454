@@ -242,6 +242,18 @@
     <script src="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.umd.js"></script>
     <!-- Mickidum Accessibility Toolbar -->
     <script src="https://cdn.jsdelivr.net/gh/mickidum/acc_toolbar/acctoolbar/acctoolbar.min.js"></script>
+<style data-zappy-animations="">
+@keyframes zappy-fade-in { from { opacity: 0; } to { opacity: 1; } }
+@keyframes zappy-slide-up { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes zappy-slide-left { from { opacity: 0; transform: translateX(-30px); } to { opacity: 1; transform: translateX(0); } }
+@keyframes zappy-slide-right { from { opacity: 0; transform: translateX(30px); } to { opacity: 1; transform: translateX(0); } }
+@keyframes zappy-zoom-in { from { opacity: 0; transform: scale(0.9); } to { opacity: 1; transform: scale(1); } }
+@keyframes zappy-bounce { 0% { opacity: 0; transform: translateY(30px); } 60% { opacity: 1; transform: translateY(-5px); } 100% { transform: translateY(0); } }
+@keyframes zappy-flip { from { opacity: 0; transform: perspective(400px) rotateY(90deg); } to { opacity: 1; transform: perspective(400px) rotateY(0); } }
+@keyframes zappy-rotate-in { from { opacity: 0; transform: rotate(-10deg) scale(0.95); } to { opacity: 1; transform: rotate(0) scale(1); } }
+[data-zappy-animate] { opacity: 0; }
+[data-zappy-animate].zappy-animated { opacity: 1; }
+</style>
     <link rel="stylesheet" href="/styles.css">
 
     <style id="zappy-dropdown-submenu-styles">
@@ -783,7 +795,7 @@
 </script>
   
   <main>
-    <section id="hero" class="index-hero-section" data-layout-spec="בית-hero" dir="rtl" data-hero-type="fullscreen-scrim">
+    <section id="hero" class="index-hero-section" data-layout-spec="בית-hero" dir="rtl" data-hero-type="fullscreen-scrim" style="animation: zappy-fade_in 0.8s 0s ease forwards;">
   <!-- Background Image -->
   <div class="index-hero-bg">
     <img data-hero-bg="true" data-placeholder="index-hero-image-1" data-context="Premium web conference main stage with dramatic cinematic lighting: large curved digital screens displaying code, design systems, and modern web interfaces. Subtle audience silhouettes in darkness, spotlights cutting through atmospheric haze, a sleek dark stage with technical equipment. The mood is sophisticated, high-caliber, and cinematic — like a top-tier tech keynote event. Deep graphite-black tones with electric blue and purple accent lighting. Wide panoramic shot with generous negative space on the right side for text overlay." width="1440" height="900" src="/assets/site-index-hero-image-1.webp" alt="במת כנס פיתוח ווב מקצועי עם תאורה דרמטית ומסכים דיגיטליים">
