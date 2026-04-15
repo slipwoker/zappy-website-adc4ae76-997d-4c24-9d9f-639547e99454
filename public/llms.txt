@@ -5,21 +5,21 @@
 ## Pages
 
 ### בית
-https://siteai.zappy5.app
+https://www.siteai.co.il
 A professional conference event aimed at website builders and web developers. The event is organized by an individual host and focuses on bringing together prof
 
 ## Legal & Policy
 
 ### Privacy Policy
-https://siteai.zappy5.app/privacy
+https://www.siteai.co.il/privacy
 Information about how user data is collected, stored, and protected.
 
 ### Terms & Conditions
-https://siteai.zappy5.app/terms
+https://www.siteai.co.il/terms
 Legal terms describing service usage, rights, and policies.
 
 ### Accessibility Statement
-https://siteai.zappy5.app/accessibility
+https://www.siteai.co.il/accessibility
 Information about WCAG compliance and accessibility features.
 
 ---
@@ -31,5 +31,5 @@ Information about WCAG compliance and accessibility features.
 
 # Additional Resources
 
-- **Sitemap**: https://siteai.zappy5.app/sitemap.xml
-- **Robots.txt**: https://siteai.zappy5.app/robots.txt
+- **Sitemap**: https://www.siteai.co.il/sitemap.xml
+- **Robots.txt**: https://www.siteai.co.il/robots.txt

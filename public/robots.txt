@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://siteai.zappy5.app/sitemap.xml
+Sitemap: https://www.siteai.co.il/sitemap.xml
